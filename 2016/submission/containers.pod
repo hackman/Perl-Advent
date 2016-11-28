@@ -17,6 +17,7 @@ Currently in Linux there are 5 namespace which allow a process:
 For the purpose of this article I will assume that a "container" is a processes or group of processes that has one or more namespaces different from the intial namespaces.
 
 There are 3 modules for working with "containers":
+
 =over
 
 =item *
