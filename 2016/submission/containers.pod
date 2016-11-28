@@ -59,8 +59,8 @@ In order to identify a namespace you would use the files in /proc/PID/ns/{ipc,mn
 
     use Linux::Setns qw(setns CLONE_NEWIPC)
 
-	setns("/proc/PID/ns/ipc", CLONE_NEWIPC);
-	system("ipcs");
+    setns("/proc/PID/ns/ipc", CLONE_NEWIPC);
+    system("ipcs");
 
 When you are entering a single namespace, L<setns(2)> requires that you give it a file descriptor from that precise namespace. So if we look at the example above, we are entering the IPC namespace (by using CLONE_NEWIPC) and we are supplying the path to the ipc file descriptor (/proc/PID/ns/ipc). If we were for example to enter the network namespace, we would use CLONE_NEWNET and /proc/PID/ns/net.
 
