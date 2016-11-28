@@ -18,9 +18,12 @@ For the purpose of this article I will assume that a "container" is a processes 
 
 There are 3 modules for working with "containers":
 =over
-=item L<Linux::Clone> - to create a new container.
-=item L<Linux::Unshare> - to create a new container without forking.
-=item L<Linux::Setns> - to change your current container.
+=item *
+L<Linux::Clone> - to create a new container.
+=item *
+L<Linux::Unshare> - to create a new container without forking.
+=item *
+L<Linux::Setns> - to change your current container.
 =back
 
 =head2
