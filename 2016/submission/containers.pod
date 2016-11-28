@@ -7,12 +7,34 @@ Author: Marian HackMan Marinov <mm@yuhu.biz>
 Linux containers are a hot topic these days. This is why I chose to share with you, how you can work with containers using Perl.
 
 Currently in Linux there are 5 namespace which allow a process:
-* UTS - to have different hostname and domainname
-* PID - to have its own view of the PIDs of the machine. This allows the process to create processes with PIDs that are already existing on the machine.
-* NET - to see different, limited version of the network infrastructure of the kernel. As if the process has its own network.
-* IPC - to have a separate SHM, SEM and MQ identifiers
-* USER - to have separate user and group identifiers
-* MOUNT - to see different view of the mounted filesystems
+
+=over
+
+=item *
+
+UTS - to have different hostname and domainname
+
+=item *
+
+PID - to have its own view of the PIDs of the machine. This allows the process to create processes with PIDs that are already existing on the machine.
+
+=item *
+
+NET - to see different, limited version of the network infrastructure of the kernel. As if the process has its own network.
+
+=item *
+
+IPC - to have a separate SHM, SEM and MQ identifiers
+
+=item *
+
+USER - to have separate user and group identifiers
+
+=item *
+
+MOUNT - to see different view of the mounted filesystems
+
+=back
 
 For the purpose of this article I will assume that a "container" is a processes or group of processes that has one or more namespaces different from the intial namespaces.
 
